@@ -4,20 +4,8 @@ public class Main {
     private final static String CURRENCY = "EUR";
 
     public static void main(String[] args) {
-        // phone info
-        String phoneName = "smartphone";
-        double phonePrice = 607.67;
-        int phoneSalesCount = 20;
-        int phoneSalesDays = 5;
-
-        //laptop info
-        String laptopName = "laptop";
-        double laptopPrice = 749.06;
-        int laptopSalesCount = 14;
-        int laptopSalesDays = 7;
-
-        calcAndPrintSalesInfo(phoneName, phonePrice, phoneSalesCount, phoneSalesDays, 1);
-        calcAndPrintSalesInfo(laptopName, laptopPrice, laptopSalesCount, laptopSalesDays, 2);
+        calcAndPrintSalesInfo("smartphone", 607.67, 20, 5, 1);
+        calcAndPrintSalesInfo("laptop", 749.06, 14, 7, 2);
     }
 
     public static void calcAndPrintSalesInfo(
