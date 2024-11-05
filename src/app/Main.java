@@ -1,23 +1,28 @@
 package app;
 
 public class Main {
+    static String productName;
+    static double productPrice;
+    static int productSalesCount;
+    static int productSalesDays;
+    static int productNumber;
     private final static String CURRENCY = "EUR";
 
     public static void main(String[] args) {
-        // phone info
-        String phoneName = "smartphone";
-        double phonePrice = 607.67;
-        int phoneSalesCount = 20;
-        int phoneSalesDays = 5;
+        productName = "smartphone";
+        productPrice = 607.67;
+        productSalesCount = 20;
+        productSalesDays = 5;
+        productNumber = 1;
 
-        //laptop info
-        String laptopName = "laptop";
-        double laptopPrice = 749.06;
-        int laptopSalesCount = 14;
-        int laptopSalesDays = 7;
+        calcAndPrintSalesInfo(productName, productPrice, productSalesCount, productSalesDays, productNumber);
 
-        calcAndPrintSalesInfo(phoneName, phonePrice, phoneSalesCount, phoneSalesDays, 1);
-        calcAndPrintSalesInfo(laptopName, laptopPrice, laptopSalesCount, laptopSalesDays, 2);
+        productName = "laptop";
+        productPrice = 749.06;
+        productSalesCount = 14;
+        productSalesDays = 7;
+        productNumber = 2;
+        calcAndPrintSalesInfo(productName, productPrice, productSalesCount, productSalesDays, productNumber);
     }
 
     public static void calcAndPrintSalesInfo(
